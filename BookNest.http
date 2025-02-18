@@ -1,0 +1,97 @@
+@BookNest_HostAddress = https://localhost:7061
+
+GET {{BookNest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{BookNest_HostAddress}}/weatherforecast
+
+###
+
+GET {{BookNest_HostAddress}}/weatherforecast
+
+###
+
+GET {{BookNest_HostAddress}}/api/books
+
+###
+
+GET {{BookNest_HostAddress}}/weatherforecast
+
+###
+
+GET {{BookNest_HostAddress}}/api/books
+
+###
+
+GET {{BookNest_HostAddress}}/api/books
+
+###
+
+@id=0
+GET {{BookNest_HostAddress}}/api/books/{{id}}
+
+###
+
+GET {{BookNest_HostAddress}}/api/books/{{id}}
+
+###
+
+GET {{BookNest_HostAddress}}/api/books
+
+###
+
+POST {{BookNest_HostAddress}}/api/books
+Content-Type: application/json
+
+
+{
+  "Title": "Weird Box",
+  "Author": "Bliss",
+  "Genre": "Thriller",
+  "Price": "10.85",
+  "PublishedDate": "2024-05-21"
+}
+
+###
+
+GET {{BookNest_HostAddress}}/api/books
+
+###
+
+PUT {{BookNest_HostAddress}}/api/books/{{id}}
+Content-Type: application/json
+
+{
+  "Id": 2,
+  "Title": "Weird Box: 2",
+  "Author": "Bliss",
+  "Genre": "Thriller",
+  "Price": "10.85",
+  "PublishedDate": "2024-05-21"
+}
+
+###
+
+PUT {{BookNest_HostAddress}}/api/books/{{id}}
+Content-Type: application/json
+
+{
+  "Id": 2,
+  "Title": "Weird Box: 2",
+  "Author": "Bliss",
+  "Genre": "Thriller",
+  "Price": "10.85",
+  "PublishedDate": "2024-05-21"
+}
+
+###
+
+GET {{BookNest_HostAddress}}/api/books
+
+###
+
+DELETE {{BookNest_HostAddress}}/api/books/1
+
+###
